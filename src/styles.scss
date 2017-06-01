@@ -1,0 +1,58 @@
+//global styles
+@import '../node_modules/bootstrap/dist/css/bootstrap.css';
+
+.panel {
+  margin: 1.25rem;
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,.2);
+  border-radius: 0.3rem;
+
+  button[type="submit"] {
+    cursor: pointer;
+  }
+}
+
+.panel.blue {
+  > h3.panel-title {
+    background-color: #eaeeff;
+  }
+}
+
+.panel > h3.panel-title {
+  background-color: #f7f7f7;
+  font-size: 1rem;
+  border-bottom: 1px solid #ebebeb;
+  border-top-left-radius: calc(.3rem - 1px);
+  border-top-right-radius: calc(.3rem - 1px);
+  padding: 8px 14px;
+  > span {
+    font-size: 0.7rem;
+    font-weight: 400;
+  }
+}
+
+.panel > .panel-content {
+  padding: 6px 12px;
+}
+
+.panel-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.panel-form__input {
+  width: 210px;
+  padding-right: 10px;
+}
+
+.panel-form__submit {
+
+}
+
+.dropdown.open > .dropdown-menu {
+  display: block;
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+}
